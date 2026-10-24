@@ -5,7 +5,6 @@ export default {
     out: "./drizzle",
     dialect: "postgresql",
     dbCredentials: {
-        url: "postgresql://apiuser:@#Mother27@localhost:5432/uberclone",
-
+        url: process.env.DATABASE_URL,
     }
 };
